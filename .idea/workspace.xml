@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cbaac7d6-a6c4-4c89-9635-3401c58cd7ab" name="Default Changelist" comment="" />
+    <list default="true" id="cbaac7d6-a6c4-4c89-9635-3401c58cd7ab" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DataGenerators/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DataGenerators/UserDataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataGenerators/UserDataGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DataGenerators/UserJSON.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefs/UsersRolesSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UsersRolesTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/DataGenerators/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/DataGenerators/UserDataGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/DataGenerators/UserJSON.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefs/UsersRolesSteps.class" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +28,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Final_Homework_FreshGrads_2019_Bahni" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -26,7 +38,20 @@
     </option>
   </component>
   <component name="ProjectId" id="1QuUyUYXF2RlL7ahdjtxkQCXf9p" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -39,59 +64,72 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UsersRolesSteps.checkOwnerAdminRights">
-    <configuration name="UsersRolesSteps" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.UsersRolesTests.checkOwnerAdminRights">
+    <configuration name="UsersRolesTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Final_Homework_FreshGrads_2019_Bahni" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="StepDefs.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="StepDefs" />
-      <option name="MAIN_CLASS_NAME" value="StepDefs.UsersRolesSteps" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UsersRolesTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UsersRolesSteps.checkOwnerAdminRights" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UsersRolesTests.checkOwnerAdminRights" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Final_Homework_FreshGrads_2019_Bahni" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="StepDefs.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="StepDefs" />
-      <option name="MAIN_CLASS_NAME" value="StepDefs.UsersRolesSteps" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UsersRolesTests" />
       <option name="METHOD_NAME" value="checkOwnerAdminRights" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UsersRolesSteps.createUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UsersRolesTests.createUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Final_Homework_FreshGrads_2019_Bahni" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="StepDefs.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="StepDefs" />
-      <option name="MAIN_CLASS_NAME" value="StepDefs.UsersRolesSteps" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UsersRolesTests" />
       <option name="METHOD_NAME" value="createUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UsersRolesTests.checkOwnerAdminRights" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Final_Homework_FreshGrads_2019_Bahni" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UsersRolesTests" />
+      <option name="METHOD_NAME" value="checkOwnerAdminRights" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UsersRolesSteps.checkOwnerAdminRights" />
-        <item itemvalue="JUnit.UsersRolesSteps" />
-        <item itemvalue="JUnit.UsersRolesSteps.createUser" />
+        <item itemvalue="TestNG.UsersRolesTests.checkOwnerAdminRights" />
+        <item itemvalue="JUnit.UsersRolesTests.checkOwnerAdminRights" />
+        <item itemvalue="JUnit.UsersRolesTests" />
+        <item itemvalue="JUnit.UsersRolesTests.createUser" />
       </list>
     </recent_temporary>
   </component>
@@ -113,7 +151,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
