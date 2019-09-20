@@ -60,12 +60,6 @@ public class UsersRolesTests extends SetUpTests{
                 .get(endpoint)
                 .then().log().ifStatusCodeIsEqualTo(401);
 
-        DBConnection dbConnection = new DBConnection();
-        dbConnection.makeDBConnection(properties.getDB_URL()
-                , properties.getDB_Username()
-                , properties.getDB_Password()
-                , "SELECT * FROM users WHERE username=\"" + response.body().jsonPath().getString("username") + "\"");
-
     }
 
 }
