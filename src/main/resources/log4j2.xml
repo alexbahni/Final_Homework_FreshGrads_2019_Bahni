@@ -5,7 +5,16 @@
     </Properties>
 
     <Appenders>
-        <RollingFile name="fileLogger" fileName="${basePath}/logs/Users_Roles_Tests.log" filePattern="${basePath}/Users_Roles_Tests-%d{yyyy-MM-dd}.log" append = "false">
+        <RollingFile name="UsersRolesTests" fileName="${basePath}/logs/Users_Roles_Tests.log" filePattern="${basePath}/Users_Roles_Tests-%d{yyyy-MM-dd}.log" append = "false">
+            <PatternLayout>
+                <pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+            </Policies>
+        </RollingFile>
+
+        <RollingFile name="DBInteractionsTests" fileName="${basePath}/logs/DB_Interactions_Tests.log" filePattern="${basePath}/DB_Interactions_Tests-%d{yyyy-MM-dd}.log" append = "false">
             <PatternLayout>
                 <pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n</pattern>
             </PatternLayout>
@@ -20,12 +29,19 @@
     </Appenders>
 
     <Loggers>
-        <Logger name="com.endava" level="debug" additivity="true">
-            <appender-ref ref="fileLogger" level="debug" />
-        </Logger>
-        <Root level="info" additivity="false">
+        <Logger name="com.endava.UsersRolesTests" additivity="true">
+            <appender-ref ref="UsersRolesTests" level="info" />
             <appender-ref ref="console" />
-            <appender-ref ref="fileLogger"/>
+        </Logger>
+        <Logger name="com.endava.DBInteractionsTests" additivity="true">
+            <appender-ref ref="DBInteractionsTests" level="info" />
+            <appender-ref ref="console" />
+        </Logger>
+
+        <Root level="all" additivity="false">
+            <appender-ref ref="UsersRolesTests" level="info" />
+            <appender-ref ref="DBInteractionsTests" level="info" />
+            <appender-ref ref="console" />
         </Root>
     </Loggers>
 

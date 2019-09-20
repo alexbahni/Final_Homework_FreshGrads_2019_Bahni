@@ -1,8 +1,22 @@
-[INFO ] 2019-09-19 18:06:32.743 [TestNG-tests-2] UsersRolesTests - GETTING STARTED BY COLLECTING THE DEFAULT USERNAME AND PASSWORD
-[INFO ] 2019-09-19 18:06:32.743 [TestNG-tests-1] UsersRolesTests - GETTING STARTED BY COLLECTING THE DEFAULT USERNAME AND PASSWORD
-[INFO ] 2019-09-19 18:06:32.947 [TestNG-tests-1] UsersRolesTests - CREATING A CONNECTION TO PETCLINIC API
-[INFO ] 2019-09-19 18:06:32.947 [TestNG-tests-1] UsersRolesTests - CREATING AN USER WITH OWNER_ADMIN ROLE
-[INFO ] 2019-09-19 18:06:32.948 [TestNG-tests-2] UsersRolesTests - CREATING A CONNECTION TO PETCLINIC API
-[INFO ] 2019-09-19 18:06:32.948 [TestNG-tests-2] UsersRolesTests - CREATING AN USER WITH VET_ADMIN ROLE
-[INFO ] 2019-09-19 18:06:34.716 [TestNG-tests-2] UsersRolesTests - WITH THE NEW CREATED ADMIN (VET_ADMIN ROLE) I TRY TO ACCESS THE owners ENDPOINT
-[INFO ] 2019-09-19 18:06:34.716 [TestNG-tests-1] UsersRolesTests - WITH THE NEW CREATED ADMIN (OWNER_ADMIN ROLE) I TRY TO ACCESS THE vets ENDPOINT
+[INFO ] 2019-09-20 15:13:08.266 [TestNG-tests-1] UsersRolesTests - -----------------------------------------------------------------------
+[INFO ] 2019-09-20 15:13:08.266 [TestNG-tests-4] DBInteractionsTests - -----------------------------------------------------------------------
+[INFO ] 2019-09-20 15:13:08.266 [TestNG-tests-3] DBInteractionsTests - -----------------------------------------------------------------------
+[INFO ] 2019-09-20 15:13:08.266 [TestNG-tests-2] UsersRolesTests - -----------------------------------------------------------------------
+[INFO ] 2019-09-20 15:13:08.269 [TestNG-tests-2] UsersRolesTests - CHECK ADMIN RIGHTS
+[INFO ] 2019-09-20 15:13:08.269 [TestNG-tests-4] DBInteractionsTests - CHECK POST INTERACTION WITH DATABASE
+[INFO ] 2019-09-20 15:13:08.269 [TestNG-tests-3] DBInteractionsTests - CHECK POST INTERACTION WITH DATABASE
+[INFO ] 2019-09-20 15:13:08.269 [TestNG-tests-1] UsersRolesTests - CHECK ADMIN RIGHTS
+[INFO ] 2019-09-20 15:13:08.273 [TestNG-tests-2] UsersRolesTests - -----------------------------------------------------------------------
+[INFO ] 2019-09-20 15:13:08.273 [TestNG-tests-1] UsersRolesTests - -----------------------------------------------------------------------
+[INFO ] 2019-09-20 15:13:08.273 [TestNG-tests-3] DBInteractionsTests - -----------------------------------------------------------------------
+[INFO ] 2019-09-20 15:13:08.273 [TestNG-tests-4] DBInteractionsTests - -----------------------------------------------------------------------
+[INFO ] 2019-09-20 15:13:08.485 [TestNG-tests-2] UsersRolesTests - CREATING A CONNECTION TO PETCLINIC_SECURED API
+[INFO ] 2019-09-20 15:13:08.485 [TestNG-tests-2] UsersRolesTests - CREATING AN USER WITH VET_ADMIN ROLE
+[INFO ] 2019-09-20 15:13:08.485 [TestNG-tests-3] DBInteractionsTests - CREATING A CONNECTION TO PETCLINIC_SECURED API
+[INFO ] 2019-09-20 15:13:08.485 [TestNG-tests-1] UsersRolesTests - CREATING A CONNECTION TO PETCLINIC_SECURED API
+[INFO ] 2019-09-20 15:13:08.486 [TestNG-tests-3] DBInteractionsTests - CREATING AN USER WITH OWNER_ADMIN ROLE
+[INFO ] 2019-09-20 15:13:08.486 [TestNG-tests-4] DBInteractionsTests - CREATING A CONNECTION TO PETCLINIC_SECURED API
+[INFO ] 2019-09-20 15:13:08.486 [TestNG-tests-4] DBInteractionsTests - CREATING AN USER WITH VET_ADMIN ROLE
+[INFO ] 2019-09-20 15:13:08.486 [TestNG-tests-1] UsersRolesTests - CREATING AN USER WITH OWNER_ADMIN ROLE
+[INFO ] 2019-09-20 15:13:10.228 [TestNG-tests-2] UsersRolesTests - WITH THE NEW CREATED ADMIN (VET_ADMIN ROLE) I TRY TO ACCESS THE owners ENDPOINT
+[INFO ] 2019-09-20 15:13:10.228 [TestNG-tests-1] UsersRolesTests - WITH THE NEW CREATED ADMIN (OWNER_ADMIN ROLE) I TRY TO ACCESS THE vets ENDPOINT

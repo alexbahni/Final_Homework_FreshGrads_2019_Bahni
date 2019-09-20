@@ -11,6 +11,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+
 public class DefaultConfigs {
 
     private static RequestSpecification specification;
@@ -24,26 +25,11 @@ public class DefaultConfigs {
         return basicAuth;
     }
 
-    public static RequestSpecification createSpec(String username, String password) {
-        Properties propertiesFile = new Properties();
-        FileInputStream fileInputStream;
-        String baseURI;
-
-
-        try {
-            fileInputStream = new FileInputStream(System.getProperty("user.dir") + "/src/main/resources/config.properties");
-            propertiesFile.load(fileInputStream);
-        } catch (FileNotFoundException e) {
-            System.out.println("We could not find the properties file! Please check if the address is correct.");
-        } catch (IOException e) {
-            System.out.println("We cold not load the properties file!");
-        }
-
-
+    public static RequestSpecification createSpec(String baseURI, String username, String password) {
 
         return specification = new RequestSpecBuilder()
                 .setContentType(ContentType.JSON)
-                .setBaseUri(propertiesFile.getProperty("BASE_URI"))
+                .setBaseUri(baseURI)
                 .setAuth( DefaultConfigs.setUpBaseAuth(username, password))
                 .addFilter(new ResponseLoggingFilter())
                 .addFilter(new ResponseLoggingFilter())

@@ -17,19 +17,18 @@ import java.util.Properties;
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
 
-
-public class UsersRolesTests extends SetUpTests{
+public class DBInteractionsTests extends SetUpTests{
     Response response;
     UserDTO userDTO;
     Faker faker;
 
-    private static final Logger LOGGER = LogManager.getLogger(UsersRolesTests.class.getName());
+    private static final Logger LOGGER = LogManager.getLogger(DBInteractionsTests.class.getName());
 
     @Test
     @Parameters({"userType", "endpoint"})
-    public void checkAdminRights(String userType, String endpoint) {
+    public void checkPostInteractionWith_DB(String userType, String endpoint) {
         LOGGER.info("-----------------------------------------------------------------------");
-        LOGGER.info("CHECK ADMIN RIGHTS");
+        LOGGER.info("CHECK POST INTERACTION WITH DATABASE");
         LOGGER.info("-----------------------------------------------------------------------");
         // ----- GENERATING DATA ----- //
         faker = new Faker();
@@ -49,23 +48,13 @@ public class UsersRolesTests extends SetUpTests{
                 .when()
                 .post("users");
 
-        // ----- WHEN I MAKE A CALL TO /vets ENDPOINT I SHOULD GET 401 CODE
-        LOGGER.info("WITH THE NEW CREATED ADMIN (" + userType + " ROLE) I TRY TO ACCESS THE " + endpoint + " ENDPOINT");
-
-        given()
-                .spec(DefaultConfigs.createSpec(properties.getBaseURI()
-                        , response.body().jsonPath().getString("username")
-                        , response.body().jsonPath().getString("password")))
-                .when()
-                .get(endpoint)
-                .then().log().ifStatusCodeIsEqualTo(401);
-
         DBConnection dbConnection = new DBConnection();
-        dbConnection.makeDBConnection(properties.getDB_URL()
+        String userCreated = dbConnection.makeDBConnection(properties.getDB_URL()
                 , properties.getDB_Username()
                 , properties.getDB_Password()
                 , "SELECT * FROM users WHERE username=\"" + response.body().jsonPath().getString("username") + "\"");
 
+        Assert.assertEquals(userCreated, response.body().jsonPath().getString("username"));
     }
 
 }

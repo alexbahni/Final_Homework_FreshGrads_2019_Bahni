@@ -1,19 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="checkAdminsRights" parallel = "tests" >
-    <test verbose = "2" preserve-order = "true" name = "checkOwnerAdminRights">
-        <parameter name = "userType" value = "OWNER_ADMIN"/>
-        <parameter name = "endpoint" value = "vets"/>
+<suite name="checkAdminsRights" parallel="tests">
+    <test verbose="2" preserve-order="true" name="checkOwnerAdminRights">
+        <parameter name="userType" value="OWNER_ADMIN"/>
+        <parameter name="endpoint" value="vets"/>
         <classes>
             <class name="UsersRolesTests">
             </class>
         </classes>
     </test>
-    <test verbose = "2" preserve-order = "true" name = "checkVetAdminRights">
+    <test verbose="2" preserve-order="true" name="checkVetAdminRights">
         <parameter name="userType" value="VET_ADMIN"/>
-        <parameter name = "endpoint" value = "owners"/>
+        <parameter name="endpoint" value="owners"/>
         <classes>
             <class name="UsersRolesTests">
+            </class>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="checkOwnerInteraction">
+        <parameter name="userType" value="OWNER_ADMIN"/>
+        <parameter name="endpoint" value="vets"/>
+        <classes>
+            <class name="DBInteractionsTests">
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="checkVetInteraction">
+        <parameter name="userType" value="VET_ADMIN"/>
+        <parameter name="endpoint" value="owners"/>
+        <classes>
+            <class name="DBInteractionsTests">
             </class>
         </classes>
     </test>

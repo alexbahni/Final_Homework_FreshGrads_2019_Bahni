@@ -3,14 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="cbaac7d6-a6c4-4c89-9635-3401c58cd7ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/Users_Roles_Tests.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/Users_Roles_Tests.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataGenerators/UserDataGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BaseRequestConfigs/DefaultConfigs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseRequestConfigs/DefaultConfigs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/UsersRolesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UsersRolesTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DataGenerators/UserDataGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/BaseRequestConfigs/DefaultConfigs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BaseRequestConfigs/DefaultConfigs.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/UsersRolesTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/UsersRolesTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +24,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Kotlin File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -82,7 +86,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UsersRolesTests.checkOwnerAdminRights" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UsersRolesTests.checkAdminRights" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Final_Homework_FreshGrads_2019_Bahni" />
       <extension name="coverage">
         <pattern>
@@ -92,7 +96,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="UsersRolesTests" />
-      <option name="METHOD_NAME" value="checkOwnerAdminRights" />
+      <option name="METHOD_NAME" value="checkAdminRights" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -124,11 +128,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UsersRolesTests.checkOwnerAdminRights" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="UsersRolesTests.checkAdminRights" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Final_Homework_FreshGrads_2019_Bahni" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="UsersRolesTests" />
-      <option name="METHOD_NAME" value="checkOwnerAdminRights" />
+      <option name="METHOD_NAME" value="checkAdminRights" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -139,8 +143,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/abahnean/IdeaProjects/Final_Homework_FreshGrads_2019_Bahni/testng.xml" />
-        <item itemvalue="TestNG.UsersRolesTests.checkOwnerAdminRights" />
-        <item itemvalue="JUnit.UsersRolesTests.checkOwnerAdminRights" />
+        <item itemvalue="TestNG.UsersRolesTests.checkAdminRights" />
+        <item itemvalue="JUnit.UsersRolesTests.checkAdminRights" />
         <item itemvalue="JUnit.UsersRolesTests" />
         <item itemvalue="JUnit.UsersRolesTests.createUser" />
       </list>
